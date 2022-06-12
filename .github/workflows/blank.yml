@@ -30,4 +30,4 @@ jobs:
           echo OK
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PR_URL: ${{ github.eent.pull_request.html_url }}
+          PR_URL: ${{ github.event.pull_request.html_url }}
